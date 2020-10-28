@@ -1,0 +1,90 @@
+Job ran on: ca044
+parallelVector.c: In function ‘parallelNorm’:
+parallelVector.c:105:38: error: ‘totalNorm’ undeclared (first use in this function)
+                 int flag = MPI_Recv(&totalNorm, 1, MPI_FLOAT, rankToCollectNorm, tag, MPI_COMM_WORLD, &status);
+                                      ^
+parallelVector.c:105:38: note: each undeclared identifier is reported only once for each function it appears in
+Tue Oct 27 23:30:06 EDT 2020: Start loop
+-----------------------------------
+Number of processes: 1 
+WARNING: serial norm was 2.495505e+03 but parallel norm was 0.000000e+00 
+----------------------------------
+-----------------------------------
+Number of processes: 2 
+--------------------------------------------------------------------------
+A system call failed during shared memory initialization that should
+not have.  It is likely that your MPI job will now either abort or
+experience performance degradation.
+
+  Local host:  ca044
+  System call: open(2) 
+  Error:       Permission denied (errno 13)
+--------------------------------------------------------------------------
+Rank 0 got parallel norm 0.000000e+00 
+WARNING: serial norm was 2.495505e+03 but parallel norm was 0.000000e+00 
+[ca044:28309] 1 more process has sent help message help-opal-shmem-mmap.txt / sys call fail
+[ca044:28309] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+----------------------------------
+-----------------------------------
+Number of processes: 4 
+Rank 0 got parallel norm 0.000000e+00 
+Rank 1 got parallel norm 0.000000e+00 
+Rank 2 got parallel norm 0.000000e+00 
+WARNING: serial norm was 2.495505e+03 but parallel norm was 0.000000e+00 
+----------------------------------
+-----------------------------------
+Number of processes: 6 
+Rank 2 got parallel norm 0.000000e+00 
+Rank 1 got parallel norm 0.000000e+00 
+Rank 0 got parallel norm 0.000000e+00 
+Rank 4 got parallel norm 0.000000e+00 
+WARNING: serial norm was 2.495505e+03 but parallel norm was 0.000000e+00 
+Rank 3 got parallel norm 0.000000e+00 
+----------------------------------
+-----------------------------------
+Number of processes: 8 
+--------------------------------------------------------------------------
+A system call failed during shared memory initialization that should
+not have.  It is likely that your MPI job will now either abort or
+experience performance degradation.
+
+  Local host:  ca044
+  System call: open(2) 
+  Error:       Permission denied (errno 13)
+--------------------------------------------------------------------------
+Rank 1 got parallel norm 0.000000e+00 
+Rank 2 got parallel norm 0.000000e+00 
+Rank 0 got parallel norm 0.000000e+00 
+Rank 3 got parallel norm 0.000000e+00 
+Rank 4 got parallel norm 0.000000e+00 
+Rank 5 got parallel norm 0.000000e+00 
+Rank 6 got parallel norm 0.000000e+00 
+WARNING: serial norm was 2.495505e+03 but parallel norm was 0.000000e+00 
+[ca044:28471] 3 more processes have sent help message help-opal-shmem-mmap.txt / sys call fail
+[ca044:28471] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+----------------------------------
+-----------------------------------
+Number of processes: 10 
+--------------------------------------------------------------------------
+A system call failed during shared memory initialization that should
+not have.  It is likely that your MPI job will now either abort or
+experience performance degradation.
+
+  Local host:  ca044
+  System call: open(2) 
+  Error:       Permission denied (errno 13)
+--------------------------------------------------------------------------
+Rank 0 got parallel norm 0.000000e+00 
+Rank 1 got parallel norm 0.000000e+00 
+Rank 2 got parallel norm 0.000000e+00 
+Rank 3 got parallel norm 0.000000e+00 
+Rank 4 got parallel norm 0.000000e+00 
+Rank 6 got parallel norm 0.000000e+00 
+Rank 7 got parallel norm 0.000000e+00 
+Rank 8 got parallel norm 0.000000e+00 
+WARNING: serial norm was 2.495505e+03 but parallel norm was 0.000000e+00 
+Rank 5 got parallel norm 0.000000e+00 
+[ca044:28565] 3 more processes have sent help message help-opal-shmem-mmap.txt / sys call fail
+[ca044:28565] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+----------------------------------
+Tue Oct 27 23:30:15 EDT 2020: End loop
